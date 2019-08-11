@@ -11,8 +11,9 @@
 		0201AA1122FED90700714D86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0201AA1022FED90700714D86 /* ViewController.swift */; };
 		0201AA1422FED90700714D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0201AA1222FED90700714D86 /* Main.storyboard */; };
 		0201AA1622FED90800714D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0201AA1522FED90800714D86 /* Assets.xcassets */; };
-		0201AA1922FED90900714D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0201AA1722FED90900714D86 /* LaunchScreen.storyboard */; };
 		0201AA2322FEE41D00714D86 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0201AA2222FEE41D00714D86 /* RoundButton.swift */; };
+		0201AA2D2300369100714D86 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0201AA2C2300369100714D86 /* Question.swift */; };
+		0201AA2F2300374600714D86 /* QuestionsBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0201AA2E2300374600714D86 /* QuestionsBank.swift */; };
 		92554AB16C6B8345002A6B07 /* Pods_Quizzz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E36A9BAFBC04F8BC2451891E /* Pods_Quizzz.framework */; };
 /* End PBXBuildFile section */
 
@@ -22,9 +23,10 @@
 		0201AA1022FED90700714D86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0201AA1322FED90700714D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0201AA1522FED90800714D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0201AA1822FED90900714D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0201AA1A22FED90900714D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0201AA2222FEE41D00714D86 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		0201AA2C2300369100714D86 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		0201AA2E2300374600714D86 /* QuestionsBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsBank.swift; sourceTree = "<group>"; };
 		09A433948CCE28EA4B861605 /* Pods-Quizzz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzz.release.xcconfig"; path = "Target Support Files/Pods-Quizzz/Pods-Quizzz.release.xcconfig"; sourceTree = "<group>"; };
 		430474A27B3B66B102ADF75B /* Pods-Quizzz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzz.debug.xcconfig"; path = "Target Support Files/Pods-Quizzz/Pods-Quizzz.debug.xcconfig"; sourceTree = "<group>"; };
 		E36A9BAFBC04F8BC2451891E /* Pods_Quizzz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quizzz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,15 +65,56 @@
 		0201AA0D22FED90700714D86 /* Quizzz */ = {
 			isa = PBXGroup;
 			children = (
-				0201AA0E22FED90700714D86 /* AppDelegate.swift */,
-				0201AA1022FED90700714D86 /* ViewController.swift */,
-				0201AA1222FED90700714D86 /* Main.storyboard */,
-				0201AA1522FED90800714D86 /* Assets.xcassets */,
-				0201AA1722FED90900714D86 /* LaunchScreen.storyboard */,
 				0201AA1A22FED90900714D86 /* Info.plist */,
-				0201AA2222FEE41D00714D86 /* RoundButton.swift */,
+				0201AA2B2300368400714D86 /* Model */,
+				0201AA282300362000714D86 /* Controller */,
+				0201AA272300361100714D86 /* View */,
+				0201AA292300363300714D86 /* Supporting Files */,
+				0201AA2A2300367600714D86 /* Unity */,
 			);
 			path = Quizzz;
+			sourceTree = "<group>";
+		};
+		0201AA272300361100714D86 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0201AA1222FED90700714D86 /* Main.storyboard */,
+				0201AA1522FED90800714D86 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0201AA282300362000714D86 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0201AA0E22FED90700714D86 /* AppDelegate.swift */,
+				0201AA1022FED90700714D86 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0201AA292300363300714D86 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0201AA2A2300367600714D86 /* Unity */ = {
+			isa = PBXGroup;
+			children = (
+				0201AA2222FEE41D00714D86 /* RoundButton.swift */,
+			);
+			path = Unity;
+			sourceTree = "<group>";
+		};
+		0201AA2B2300368400714D86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0201AA2C2300369100714D86 /* Question.swift */,
+				0201AA2E2300374600714D86 /* QuestionsBank.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		3F260AD45DF2CE7BC1076563 /* Pods */ = {
@@ -151,7 +194,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0201AA1922FED90900714D86 /* LaunchScreen.storyboard in Resources */,
 				0201AA1622FED90800714D86 /* Assets.xcassets in Resources */,
 				0201AA1422FED90700714D86 /* Main.storyboard in Resources */,
 			);
@@ -207,6 +249,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0201AA2322FEE41D00714D86 /* RoundButton.swift in Sources */,
+				0201AA2F2300374600714D86 /* QuestionsBank.swift in Sources */,
+				0201AA2D2300369100714D86 /* Question.swift in Sources */,
 				0201AA1122FED90700714D86 /* ViewController.swift in Sources */,
 				0201AA0F22FED90700714D86 /* AppDelegate.swift in Sources */,
 			);
@@ -221,14 +265,6 @@
 				0201AA1322FED90700714D86 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0201AA1722FED90900714D86 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0201AA1822FED90900714D86 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
