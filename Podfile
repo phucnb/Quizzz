@@ -7,4 +7,6 @@ target 'Quizzz' do
 
   # Pods for Quizzz
  pod 'UICircularProgressRing'
+ pod 'Pastel'
+ pod 'LTMorphingLabel'
 end

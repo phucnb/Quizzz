@@ -14,6 +14,7 @@
 		0201AA2322FEE41D00714D86 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0201AA2222FEE41D00714D86 /* RoundButton.swift */; };
 		0201AA2D2300369100714D86 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0201AA2C2300369100714D86 /* Question.swift */; };
 		0201AA2F2300374600714D86 /* QuestionsBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0201AA2E2300374600714D86 /* QuestionsBank.swift */; };
+		0201AA352301FF7900714D86 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0201AA342301FF7900714D86 /* Launch Screen.storyboard */; };
 		92554AB16C6B8345002A6B07 /* Pods_Quizzz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E36A9BAFBC04F8BC2451891E /* Pods_Quizzz.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		0201AA2222FEE41D00714D86 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		0201AA2C2300369100714D86 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		0201AA2E2300374600714D86 /* QuestionsBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsBank.swift; sourceTree = "<group>"; };
+		0201AA342301FF7900714D86 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		09A433948CCE28EA4B861605 /* Pods-Quizzz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzz.release.xcconfig"; path = "Target Support Files/Pods-Quizzz/Pods-Quizzz.release.xcconfig"; sourceTree = "<group>"; };
 		430474A27B3B66B102ADF75B /* Pods-Quizzz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Quizzz.debug.xcconfig"; path = "Target Support Files/Pods-Quizzz/Pods-Quizzz.debug.xcconfig"; sourceTree = "<group>"; };
 		E36A9BAFBC04F8BC2451891E /* Pods_Quizzz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Quizzz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 			children = (
 				0201AA1222FED90700714D86 /* Main.storyboard */,
 				0201AA1522FED90800714D86 /* Assets.xcassets */,
+				0201AA342301FF7900714D86 /* Launch Screen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -194,6 +197,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0201AA352301FF7900714D86 /* Launch Screen.storyboard in Resources */,
 				0201AA1622FED90800714D86 /* Assets.xcassets in Resources */,
 				0201AA1422FED90700714D86 /* Main.storyboard in Resources */,
 			);

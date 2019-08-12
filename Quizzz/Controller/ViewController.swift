@@ -8,6 +8,7 @@
 
 import UIKit
 import UICircularProgressRing
+import Pastel
 
 class ViewController: UIViewController {
 
@@ -22,7 +23,32 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let pastelView = PastelView(frame: view.bounds)
+        questionText.adjustsFontSizeToFitWidth = true
+        questionText.minimumScaleFactor = 0.5
+        // Custom Direction
+        pastelView.startPastelPoint = .bottomLeft
+        pastelView.endPastelPoint = .topRight
+
+        // Custom Duration
+        pastelView.animationDuration = 5.0
+
+        // Custom Color
+        pastelView.setColors([UIColor(red: 252/255, green: 227/255, blue: 138/255, alpha: 1.0),
+                              UIColor(red: 243/255, green: 129/255, blue: 129/255, alpha: 1.0),
+                              UIColor(red: 123/255, green: 31/255, blue: 162/255, alpha: 1.0),
+                              UIColor(red: 32/255, green: 76/255, blue: 255/255, alpha: 1.0),
+                              UIColor(red: 32/255, green: 158/255, blue: 255/255, alpha: 1.0),
+                              UIColor(red: 90/255, green: 120/255, blue: 127/255, alpha: 1.0),
+                              UIColor(red: 58/255, green: 255/255, blue: 217/255, alpha: 1.0)])
+
+        pastelView.startAnimation()
+        view.insertSubview(pastelView, at: 0)
+
         self.viewContainer.layer.cornerRadius = 10
+        self.viewContainer.backgroundColor = UIColor.white.withAlphaComponent(0.60)
+        self.viewContainer.isOpaque = false
+        shuffleQuestions()
         numberOfQuestions = questions.questionsArray.count + 1
         questionText.text = questions.questionsArray[0].question
 
@@ -46,6 +72,11 @@ class ViewController: UIViewController {
 
     func updateQuestion() {
         questionText.text = questions.questionsArray[questionNumber].question
+    }
+
+    func shuffleQuestions(){
+        //this method to shuffle an array of questions
+        questions.questionsArray.shuffle()
     }
 
 }
